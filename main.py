@@ -2,11 +2,13 @@
 # ******************************
 # Make your Code
 # ******************************
-strval = input().split()
+
+strval = input("Enter 5 numbers, separated by space: ").split()
 numbers = []
+
 for v in strval:
-	numbers.append(int(v))
-print (numbers)
-# the below llin 11 are same as the lines from 5 to 8
-# numbers = list(map(int, strval))
-# print (numbers)
+  numbers.append(int(v))
+
+
+check = int(input("Enter int: "))
+print(f"The occurences of {check}: {numbers.count(check)}")
